@@ -1,0 +1,438 @@
+.tournamentsList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: '5px';
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h1{
+    color:#042f54;
+}
+
+h2{
+    color:#042f54;
+}
+
+
+.tournamentCard{
+    border: 1px solid #042f54;
+    border-radius: '5px';
+    padding: 10px; 
+    width: 800px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+    color: #003554;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.sorting{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.filtering {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.sorting select{
+    padding: 8px;
+    border: 1px solid #003554 ;
+    border-radius: 5px;
+    width: 160%;
+}
+
+.filtering input[type="text"],
+.filtering input[type="date"],
+.filtering select {
+    padding: 8px;
+    border: 1px solid #003554 ;
+    border-radius: 5px;
+    width: 150%;
+}
+
+.filtering select {
+    flex-basis: 40px;
+    width:160%;
+}
+
+.filteringNear {
+    display: grid;
+    grid-template-columns: 230px 1fr; 
+    gap: 20px;
+}
+
+.filtersort{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.pagination button,
+.pagination select {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #003554;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pagination button:hover,
+.pagination select:hover {
+    background-color: #e0e0e0;
+}
+
+.editTeam{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.editTeam input{
+    padding: 8px;
+    border: 1px solid #003554 ;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.createBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminTournament{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #003554;
+    width: 50%;
+}
+
+.form input{
+    padding: 8px;
+    border: 1px solid #003554 ;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.form select{
+    padding: 8px;
+    border: 1px solid #003554 ;
+    border-radius: 5px;
+    width: 72%;
+}
+
+.form textarea{
+    padding: 8px;
+    border: 1px solid #003554 ;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.formDiv{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsCard{
+    border: 1px solid #042f54;
+    border-radius: '5px';
+    padding: 10px; 
+    width: 600px;
+    margin: 70px 0px 70px 0px;
+    border-width: 2px;
+    border-radius: 10px;
+    color: #003554;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsCardProfile{
+    padding: 10px; 
+    width: 600px;
+    margin: 70px 0px 70px 0px;
+    color: #003554;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.profileBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.adminDashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminBtn select{
+    padding: 8px;
+    border: 1px solid #003554 ;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.users{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #003554 ;
+}
+
+.playerCard{
+    border: 1px solid #042f54;
+    border-radius: '5px';
+    padding: 10px; 
+    width: 500px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+    color: #003554;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerBtn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-size: 1.5em;
+    color: #042f54;
+  }
+  
+.table{
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+    color:#042f54;
+}
+  
+.thead{
+    background-color: #042f54;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+}
+  
+.tableBody{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+table th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #042f54;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    color:#f0f3fa;
+}
+
+.container textarea{
+    padding: 8px;
+    border: 1px solid #003554 ;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #003554 ;
+    width: 40%;
+}
+
+.commentInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.profileIcon{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inviteCard{
+    border: 1px solid #042f54;
+    border-radius: '5px';
+    padding: 10px; 
+    width: 600px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+    color: #003554;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

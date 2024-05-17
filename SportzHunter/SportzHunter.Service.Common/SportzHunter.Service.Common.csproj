@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD788168-86A5-4E15-98E4-2C0A85FF7D32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SportzHunter.Service.Common</RootNamespace>
+    <AssemblyName>SportzHunter.Service.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAttendService.cs" />
+    <Compile Include="ICommentService.cs" />
+    <Compile Include="IInviteService.cs" />
+    <Compile Include="IMatchService.cs" />
+    <Compile Include="IAdminService.cs" />
+    <Compile Include="IPlayerService.cs" />
+    <Compile Include="ITeamLeaderService.cs" />
+    <Compile Include="ITeamService.cs" />
+    <Compile Include="ITournamentService.cs" />
+    <Compile Include="IUserService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SportzHunter.Common\SportzHunter.Common.csproj">
+      <Project>{FFE3BA4D-66DA-4CA9-BE52-3781B6F259E2}</Project>
+      <Name>SportzHunter.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SportzHunter.Model.Common\SportzHunter.Model.Common.csproj">
+      <Project>{5C4BCA6B-2343-4AE9-907B-6E0DA2EA9219}</Project>
+      <Name>SportzHunter.Model.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SportzHunter.Model\SportzHunter.Model.csproj">
+      <Project>{7ab1fccb-0c84-4f7b-b899-2217bfddd47a}</Project>
+      <Name>SportzHunter.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
